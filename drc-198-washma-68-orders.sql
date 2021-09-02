@@ -12,7 +12,9 @@ SELECT
   o.vendor_comment,
 FROM
   `fulfillment-dwh-production.pandata_curated.pd_orders` o
-left join `fulfillment-dwh-production.pandata_curated.pd_vendors` v on o.pd_vendor_uuid = v.uuid and v.global_entity_id = o.global_entity_id 
+left join `fulfillment-dwh-production.pandata_curated.pd_vendors` v 
+       on o.pd_vendor_uuid = v.uuid 
+      and v.global_entity_id = o.global_entity_id
 WHERE
   o.global_entity_id = 'FP_PK'
   AND v.chain_code = 'ct7xe'
