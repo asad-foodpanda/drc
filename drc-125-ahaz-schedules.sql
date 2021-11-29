@@ -1,5 +1,5 @@
 with may_activations as (
-  select a.global_vendor_id, v.vendor_code
+  select a.global_vendor_id, v.vendor_code as vendor_code
   FROM `fulfillment-dwh-production.pandata_curated.sf_opportunities` o
   join `fulfillment-dwh-production.pandata_curated.sf_accounts` a
     on o.global_vendor_id = a.global_vendor_id and o.global_entity_id = a.global_entity_id
