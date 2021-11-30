@@ -185,4 +185,4 @@ left join customer_data c on c.pd_customer_uuid = o.pd_customer_uuid
 left join vendor_data vendor on vendor.vendor_code = o.vendor_code
 where o.created_date_utc between '2021-11-17' - 1 and '2021-11-25'
   and o.global_entity_id = 'FP_PK'
-  and o.created_date_local between '2021-11-17' and '2021-11-24'
+  and o.created_date_local between  '2021-11-17' and '2021-11-24'
