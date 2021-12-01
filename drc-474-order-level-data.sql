@@ -101,6 +101,7 @@ vendor_data as (
 )
 
 select o.code as order_id, 
+  o.vendor_code,
   o.created_date_local as date,
   o.created_at_local as time,
   v.vertical,
